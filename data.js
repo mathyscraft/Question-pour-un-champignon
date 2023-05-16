@@ -14,13 +14,13 @@ var question = [
         "reponse": "190 essences de bois,de nombreuses espèces d’oiseaux, d’invertébrés et de mammifères, des champignons etc"
     },
     {
-        "texte": "Qu'est ce qu’une forêt? Combien y a t il d'espèce d'arbre en france?",
-        "reponse": "Un écosystème dont la biotope est constitué d’arbre et il y a 138 espèce recensée 70% de feuillus 30% de résineux"
-    },
-    {
         "texte":  "indiquer quels sont les services rendus à l'humanité par les écosystèmes forestiers de.. <br> approvisionnement <br> régulation <br> culture",
         "reponse": "approvisionnement :bois, biens forestiers (substances naturelles et herbes aromatiques) <br> régulation: protection contre aléas naturel et stockage du carbone (atténuation réchauffement clim), formation et stabilisation des sols <br> culture : activités de recherche scientifique ou chasse"
         
+    },
+    {
+        "texte": "Qu'est ce qu’une forêt? Combien y a t il d'espèce d'arbre en france?",
+        "reponse": "Un écosystème dont la biotope est constitué d’arbre et il y a 138 espèce recensée 70% de feuillus 30% de résineux"
     },
     {
         "texte": "Completez le texte à trous.",
