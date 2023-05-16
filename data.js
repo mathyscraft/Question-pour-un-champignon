@@ -41,7 +41,7 @@ var question = [
     },
     {
         "texte": "De quoi sont constitués les écosystèmes?",
-        "reponse": "Ils sont constitués par des communautés d'être vivant interagissant au sein de leur milieu de vie."
+        "reponse": "Ils sont constitués par des communautés d'être vivant(biotope) interagissant au sein de leur milieu de vie. (biocénose)"
     },
     {
         "texte": "Quel est le rôle de l’ONF?",
