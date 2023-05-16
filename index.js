@@ -8,7 +8,7 @@ const progressStat = document.getElementById("progress-stat")
 let currentQuestion = {}
 const initialQuestionLength = question.length
 let points = 0
-let count = 0
+// let count = 0
 let playerGirolle = false
 let amanitePoints = 0
 let girollePoints = 0
@@ -50,8 +50,8 @@ function getQuestion() {
             console.log(question)
         }
         // let randomIndex = Math.floor(Math.random() * unansweredQuestions.length);
-        currentQuestion = question[count];
-        count += 1
+        currentQuestion = unansweredQuestions[0];
+        // count += 1
 
         if (playerGirolle) {
             document.getElementById("girolle").style.borderColor = "gold"
