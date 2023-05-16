@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>flashcards</title>
+</head>
+<body onkeypress="if (event.code == 'Space') return false">
+  <div id="flashcard-container">
+    <header>
+      <div id="left-header">
+        <!-- <img src="menu_hamburger.svg" alt="Menu" width="50px" id="hamburger">
+        <div id="menu" hidden>
+          <ul>
+            <li><span id="apollinaire">Apollinaire (Alcools)</span></li>
+            <hr />
+            <li><span id="H234">H2,3,4 Connaissances de base</span></li>
+          </ul>
+        </div> -->
+        <img src="./girole.png" id="girolle" onclick="player(true)">
+        <h1>Mr Girolle </h1>
+        <span id="girolle-points"> 0</span>
+      </div>
+      <h1>Question pour un champignon</h1>
+      <div id="right-header">
+        <span id="amanite-points"> 0</span>
+        <h1>Mr Amanite</h1>
+        <img src="./amanite.png" id="amanite" onclick="player(false)">
+      </div>
+    </header>
+    <div class="side-indicators">
+      <p id="false">Faux</p>
+      <div id="progress-div">
+        <span id="progress-stat"></span>
+        <div id="progress-bar"></div>
+      </div>
+      <p id="correct">Juste</p>
+    </div>
+    <div id="flashcard">
+      <h1 id="output">
+        Chargement...
+        <a id="output-img-link" href="" target="_blank"><img id="output-img" src="" ></a>
+      </h1>
+      <h1 id="answer" hidden>
+        <a id="answer-img-link" href="" target="_blank"><img id="answer-img" src="" ></a>
+      </h1>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 <a href="https://github.com/mathyscraft">Mathys TS</a></p>
+    Mountain by <a href="https://www.freepik.com/free-vector/hand-drawn-flat-design-mountain-landscape_20008387.htm#query=mountain&position=12&from_view=search&track=sph">Freepik</a>
+    <a href="https://www.flaticon.com/free-icons/mushroom" title="mushroom icons">Mushrooms icons created by Freepik - Flaticon</a></footer>
+  <div id="overlay" hidden></div>
+  <script src="data.js"></script>
+  <script src="index.js"></script>
+  <!-- <script src="navigation.js"></script> -->
+</body>
+</html>

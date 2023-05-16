@@ -1,0 +1,184 @@
+body {
+    background-image: url(./fond.jpg);
+    background-size: cover;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    overflow: hidden;
+}
+h1 {
+    font-size: 26px;
+}
+ul {
+    padding-left: 0;
+    margin: 10px 0;
+    margin-left: 20px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    background-color: rgba(24, 24, 24, 0.4);
+}
+header span {
+    margin: 0 10px;
+    font-size: 26px;
+}
+#left-header {
+    display: flex;
+    align-items: center;
+}
+#left-header img {
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    /* cursor: pointer; */
+    background-color: cornflowerblue;
+    border: 10px solid cornflowerblue;
+    border-radius: 50%;
+}
+#left-header h1 {
+    margin-left: 80px;
+}
+
+#right-header {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#right-header img {
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    background-color: cornflowerblue;
+    border: 10px solid cornflowerblue;
+    border-radius: 50%;
+}
+#right-header h1 {
+    margin-right: 80px;
+}
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    padding: 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    max-width: 85vw;
+    background-color: rgb(41, 41, 41);
+    font-size: 20px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    transition: 200ms;
+}
+#menu li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+#menu li:hover {
+    text-decoration: underline;
+}
+
+#flashcard-container {
+    width: 100vw;
+    height: 100vh;
+}
+#flashcard {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 80%;
+    z-index: 2;
+    transform: translate(-50%);
+    transform-style: preserve-3d;
+
+    background-color: rgba(41, 41, 41, 0.8);
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 50px 0;
+    box-sizing: border-box;
+    text-align: center;
+    user-select: none;
+    transition: opacity 750ms, transform 200ms;
+}
+
+#flashcard.is-flipped {
+    transform: rotateX(180deg) translate(-50%);
+}
+#answer {
+    transform: rotateX(180deg);
+}
+
+#flashcard a {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+#flashcard img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.side-indicators {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px 0;
+    
+}
+#false {
+    padding:10px;
+    margin:10px;
+    width: 35px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    border: 5px solid red;
+    color: red;
+}
+#correct {
+    padding:10px;
+    margin:10px;
+    width: 35px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    border: 5px solid green;
+    color: green;
+}
+#progress-div {
+    display: block;
+    text-align: center;
+    color: black;
+}
+#progress-bar {
+    display: block;
+    margin: auto;
+    height: 5px;
+    width: calc(100vw - (35px + 10px + 10px)*2 - 100px);
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    border: 0px solid rgb(41, 41, 41);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    text-align: center;
+    width: 100%;
+    padding-top:20px;
+    background-color: rgba(24, 24, 24, 0.4);
+}
+
+#overlay {
+    position: absolute;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.7);
+}
