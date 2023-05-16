@@ -212,10 +212,10 @@ document.addEventListener("keypress", function(e) {
             girollePoints -= 1
             bonusRound ++
             document.getElementById("girolle-points").innerHTML = girollePoints            
-            document.getElementById("grirolle").style.backgroundColor = "crimson"
-            document.getElementById("grirolle").style.borderColor = "crimson"
+            document.getElementById("girolle").style.backgroundColor = "crimson"
+            document.getElementById("girolle").style.borderColor = "crimson"
             setTimeout(function() {
-                document.getElementById("grirolle").style.borderColor = "cornflowerblue"
+                document.getElementById("girolle").style.borderColor = "cornflowerblue"
                 document.getElementById("girolle").style.backgroundColor = "cornflowerblue"
             }, 3000)
         }
